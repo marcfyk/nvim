@@ -94,4 +94,7 @@ lspconfig.sumneko_lua.setup{
 lspconfig.rust_analyzer.setup{
   capabilities = capabilities
 }
+lspconfig.ocamllsp.setup{
+  capabilities = capabilities
+}
 
