@@ -27,7 +27,7 @@ require'packer'.startup(function()
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
 
-  -- Fuzzy Finder and File explorer
+  -- Fuzzy Finder and File Explorer
   use {
     'nvim-telescope/telescope.nvim',
     requires = { {'nvim-lua/plenary.nvim'} }

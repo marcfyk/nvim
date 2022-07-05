@@ -97,4 +97,7 @@ lspconfig.rust_analyzer.setup{
 lspconfig.ocamllsp.setup{
   capabilities = capabilities
 }
+lspconfig.pyright.setup{
+  capabilities = capabilities
+}
 
