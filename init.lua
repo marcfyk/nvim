@@ -14,9 +14,14 @@ vim.o.hidden = true
 vim.o.relativenumber = true
 vim.o.number = true
 
+vim.o.scrolloff = 8
+
 vim.o.incsearch = true
 
+vim.o.unnamed = true
+vim.o.unnamedplus = true
+
 vim.o.termguicolors = true
-vim.cmd[[colorscheme seoul256]]
-vim.o.background = 'light'
+vim.cmd[[colorscheme gruvbox]]
+vim.o.background = "dark"
 
