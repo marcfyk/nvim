@@ -18,8 +18,7 @@ vim.o.scrolloff = 8
 
 vim.o.incsearch = true
 
-vim.o.unnamed = true
-vim.o.unnamedplus = true
+vim.opt.clipboard = 'unnamedplus'
 
 vim.o.termguicolors = true
 vim.cmd[[colorscheme gruvbox]]
