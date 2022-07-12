@@ -1,26 +1,26 @@
-vim.o.tabstop = 4
-vim.o.shiftwidth = 4
-vim.o.expandtab = true
-vim.o.smartindent = true
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
+vim.opt.smartindent = true
 
-vim.o.cursorline = true
+vim.opt.cursorline = true
 
-vim.o.errorbells = false
+vim.opt.errorbells = false
 
-vim.o.swapfile = false
-vim.o.backup = false
-vim.o.hidden = true
+vim.opt.swapfile = false
+vim.opt.backup = false
+vim.opt.hidden = true
 
-vim.o.relativenumber = true
-vim.o.number = true
+vim.opt.relativenumber = true
+vim.opt.number = true
 
-vim.o.scrolloff = 8
+vim.opt.scrolloff = 8
 
-vim.o.incsearch = true
+vim.opt.incsearch = true
 
 vim.opt.clipboard = 'unnamedplus'
 
-vim.o.termguicolors = true
+vim.opt.termguicolors = true
 vim.cmd[[colorscheme gruvbox]]
-vim.o.background = "dark"
+vim.opt.background = "dark"
 
