@@ -45,11 +45,6 @@ require'packer'.startup(function()
   }
 
   -- Themes
-  use { 'ayu-theme/ayu-vim', opt = true }
-  use { 'morhetz/gruvbox', opt = true }
-  use { 'arcticicestudio/nord-vim', opt = true }
-  use { 'NLKNguyen/papercolor-theme', opt = true }
-  use { 'altercation/vim-colors-solarized', opt = true }
-  use { 'junegunn/seoul256.vim', opt = true }
+  use 'junegunn/seoul256.vim'
 
 end)
