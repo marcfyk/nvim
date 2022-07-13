@@ -21,6 +21,6 @@ vim.opt.incsearch = true
 vim.opt.clipboard = 'unnamedplus'
 
 vim.opt.termguicolors = true
-vim.cmd[[colorscheme gruvbox]]
+vim.cmd[[colorscheme seoul256]]
 vim.opt.background = "dark"
 
