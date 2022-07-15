@@ -31,6 +31,9 @@ require'packer'.startup(function()
   use 'L3MON4D3/LuaSnip'
   use 'saadparwaiz1/cmp_luasnip'
 
+  -- Startup Screen
+  use 'mhinz/vim-startify'
+ 
   -- Status Bar
   use {
     'nvim-lualine/lualine.nvim',
