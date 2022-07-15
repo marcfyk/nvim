@@ -12,6 +12,16 @@ require'packer'.startup(function()
   use 'neovim/nvim-lspconfig'
   use 'williamboman/nvim-lsp-installer'
 
+
+  -- Display LSP info more clearly
+  use {
+    "folke/trouble.nvim",
+    requires = "kyazdani42/nvim-web-devicons",
+    config = function()
+      require("trouble").setup{}
+    end
+  }
+
   -- Autocomplete
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-nvim-lsp'
@@ -40,7 +50,7 @@ require'packer'.startup(function()
   use {
     'lewis6991/gitsigns.nvim',
     config = function()
-      require'gitsigns'.setup()
+      require'gitsigns'.setup{}
     end
   }
 

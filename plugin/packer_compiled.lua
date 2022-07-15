@@ -74,12 +74,6 @@ _G.packer_plugins = {
     path = "/home/marcfyk/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  ["ayu-vim"] = {
-    loaded = false,
-    needs_bufread = false,
-    path = "/home/marcfyk/.local/share/nvim/site/pack/packer/opt/ayu-vim",
-    url = "https://github.com/ayu-theme/ayu-vim"
-  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/marcfyk/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -106,27 +100,15 @@ _G.packer_plugins = {
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
   ["gitsigns.nvim"] = {
-    config = { "\27LJ\2\0026\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rgitsigns\frequire\0" },
+    config = { "\27LJ\2\2:\0\0\2\0\3\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\0\0B\0\2\1K\0\1\0\nsetup\rgitsigns\frequire\0" },
     loaded = true,
     path = "/home/marcfyk/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
-  },
-  gruvbox = {
-    loaded = false,
-    needs_bufread = false,
-    path = "/home/marcfyk/.local/share/nvim/site/pack/packer/opt/gruvbox",
-    url = "https://github.com/morhetz/gruvbox"
   },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/marcfyk/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
-  },
-  ["nord-vim"] = {
-    loaded = false,
-    needs_bufread = false,
-    path = "/home/marcfyk/.local/share/nvim/site/pack/packer/opt/nord-vim",
-    url = "https://github.com/arcticicestudio/nord-vim"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -158,21 +140,14 @@ _G.packer_plugins = {
     path = "/home/marcfyk/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
-  ["papercolor-theme"] = {
-    loaded = false,
-    needs_bufread = false,
-    path = "/home/marcfyk/.local/share/nvim/site/pack/packer/opt/papercolor-theme",
-    url = "https://github.com/NLKNguyen/papercolor-theme"
-  },
   ["plenary.nvim"] = {
     loaded = true,
     path = "/home/marcfyk/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["seoul256.vim"] = {
-    loaded = false,
-    needs_bufread = false,
-    path = "/home/marcfyk/.local/share/nvim/site/pack/packer/opt/seoul256.vim",
+    loaded = true,
+    path = "/home/marcfyk/.local/share/nvim/site/pack/packer/start/seoul256.vim",
     url = "https://github.com/junegunn/seoul256.vim"
   },
   ["telescope-file-browser.nvim"] = {
@@ -190,11 +165,11 @@ _G.packer_plugins = {
     path = "/home/marcfyk/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
-  ["vim-colors-solarized"] = {
-    loaded = false,
-    needs_bufread = false,
-    path = "/home/marcfyk/.local/share/nvim/site/pack/packer/opt/vim-colors-solarized",
-    url = "https://github.com/altercation/vim-colors-solarized"
+  ["trouble.nvim"] = {
+    config = { "\27LJ\2\0029\0\0\2\0\3\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\0\0B\0\2\1K\0\1\0\nsetup\ftrouble\frequire\0" },
+    loaded = true,
+    path = "/home/marcfyk/.local/share/nvim/site/pack/packer/start/trouble.nvim",
+    url = "https://github.com/folke/trouble.nvim"
   },
   ["vim-fugitive"] = {
     loaded = true,
@@ -206,8 +181,12 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Config for: gitsigns.nvim
 time([[Config for gitsigns.nvim]], true)
-try_loadstring("\27LJ\2\0026\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rgitsigns\frequire\0", "config", "gitsigns.nvim")
+try_loadstring("\27LJ\2\2:\0\0\2\0\3\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\0\0B\0\2\1K\0\1\0\nsetup\rgitsigns\frequire\0", "config", "gitsigns.nvim")
 time([[Config for gitsigns.nvim]], false)
+-- Config for: trouble.nvim
+time([[Config for trouble.nvim]], true)
+try_loadstring("\27LJ\2\0029\0\0\2\0\3\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\0\0B\0\2\1K\0\1\0\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
+time([[Config for trouble.nvim]], false)
 if should_profile then save_profiles() end
 
 end)
