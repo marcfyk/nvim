@@ -33,16 +33,19 @@ require'packer'.startup(function()
 
   -- Startup Screen
   use 'mhinz/vim-startify'
- 
+
   -- Status Bar
   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-  } 
-  
+  }
+
   -- Tree Explorer
   use {
     'kyazdani42/nvim-tree.lua',
+    requires = {
+      'kyazdani42/nvim-web-devicons',
+    },
     config = function ()
       require'nvim-tree'.setup{}
     end
