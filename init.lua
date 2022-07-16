@@ -17,6 +17,7 @@ vim.opt.number = true
 vim.opt.scrolloff = 8
 
 vim.opt.incsearch = true
+vim.opt.hlsearch = false
 
 vim.opt.clipboard = 'unnamedplus'
 

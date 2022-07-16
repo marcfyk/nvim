@@ -39,6 +39,14 @@ require'packer'.startup(function()
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   } 
+  
+  -- Tree Explorer
+  use {
+    'kyazdani42/nvim-tree.lua',
+    config = function ()
+      require'nvim-tree'.setup{}
+    end
+  }
 
   -- Fuzzy Finder and File Explorer
   use {
