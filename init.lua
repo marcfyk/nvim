@@ -19,7 +19,7 @@ vim.opt.scrolloff = 8
 vim.opt.incsearch = true
 vim.opt.hlsearch = false
 
-vim.opt.clipboard = 'unnamedplus'
+vim.opt.clipboard = "unnamedplus"
 
 vim.opt.splitright = true
 vim.opt.splitbelow = true
