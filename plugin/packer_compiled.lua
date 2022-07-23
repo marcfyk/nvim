@@ -74,6 +74,11 @@ _G.packer_plugins = {
     path = "/home/marcfyk/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  catppuccin = {
+    loaded = true,
+    path = "/home/marcfyk/.local/share/nvim/site/pack/packer/start/catppuccin",
+    url = "https://github.com/catppuccin/nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/marcfyk/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -150,11 +155,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/marcfyk/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
-  },
-  ["seoul256.vim"] = {
-    loaded = true,
-    path = "/home/marcfyk/.local/share/nvim/site/pack/packer/start/seoul256.vim",
-    url = "https://github.com/junegunn/seoul256.vim"
   },
   ["telescope-file-browser.nvim"] = {
     loaded = true,

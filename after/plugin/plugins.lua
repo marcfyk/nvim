@@ -34,7 +34,7 @@ require'packer'.startup(function()
   -- Startup Screen
   use 'mhinz/vim-startify'
 
-  -- Status Bar
+  -- Status Line
   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
@@ -69,6 +69,10 @@ require'packer'.startup(function()
   }
 
   -- Themes
-  use 'junegunn/seoul256.vim'
+  use {
+    "catppuccin/nvim",
+    as = "catppuccin",
+    run = ":CatppuccinCompile"
+  }
 
 end)

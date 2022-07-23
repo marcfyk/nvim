@@ -23,8 +23,3 @@ vim.opt.clipboard = "unnamedplus"
 
 vim.opt.splitright = true
 vim.opt.splitbelow = true
-
-vim.opt.termguicolors = true
-vim.cmd[[colorscheme seoul256]]
-vim.opt.background = "light"
-
