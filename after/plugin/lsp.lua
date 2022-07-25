@@ -60,17 +60,6 @@ cmp.setup.cmdline(":", {
   })
 })
 
--- Setup lsp installer.
-require"nvim-lsp-installer".setup{
-  ui = {
-    icons = {
-      server_installed = "✓",
-      server_pending = "➜",
-      server_uninstalled = "✗"
-    }
-  }
-}
-
 -- Setup lspconfig.
 local capabilities = require("cmp_nvim_lsp").update_capabilities(vim.lsp.protocol.make_client_capabilities())
 
@@ -113,16 +102,6 @@ local lspconfig = require"lspconfig"
 lspconfig.gopls.setup{
   on_attach = on_attach,
   capabilities = capabilities
-}
-lspconfig.fsautocomplete.setup{
-  on_attach = on_attach,
-  capabilities = capabilities,
-}
-lspconfig.elixirls.setup{
-  on_attach = on_attach,
-  capabilities = capabilities,
-  cmd = { "~/.local/share/nvim/lsp_servers/elixirls/elixirls" },
-  filetypes = { "ex", "exs", "elixir", "eelixir", "heex" }
 }
 lspconfig.hls.setup{
   on_attach = on_attach,
