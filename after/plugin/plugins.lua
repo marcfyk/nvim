@@ -51,13 +51,12 @@ require'packer'.startup(function()
     end
   }
 
-  -- Fuzzy Finder and File Explorer
+  -- Telescope
   use {
     'nvim-telescope/telescope.nvim',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
   use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
-  use 'nvim-telescope/telescope-file-browser.nvim'
 
   -- Git
   use 'tpope/vim-fugitive'

@@ -6,4 +6,4 @@ vim.keymap.set("n", "<leader>F", "<cmd>Telescope live_grep theme=dropdown<CR>")
 vim.keymap.set("n", "<leader>t", "<cmd>NvimTreeToggle<CR>")
 
 -- Trouble
-vim.keymap.set("n", "<leader>D", "<cmd>TroubleToggle<CR>")
+vim.keymap.set("n", "<leader>d", "<cmd>TroubleToggle<CR>")
